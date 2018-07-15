@@ -8,19 +8,28 @@
 
     <style>
 
-     body {
+    body {
       font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
       font-weight: 300;
-     }
+      color: #666;
+    }
 
-     nav {
+    nav {
       text-transform: uppercase;
+      text-align: right;
+      font-size:  14px;
       font-weight: 600;
       letter-spacing: 1.5px;
-     }
+      margin-bottom: 10px;
+    }
 
-    h2, h3, h4, h5, h6 {
-      text-transform: uppercase;
+    nav a {
+      padding: 10px;
+    }
+
+    header {
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
 
     h1 {
@@ -29,15 +38,81 @@
     }
 
     h2 {
-      letter-spacing: 6px;
+      letter-spacing: 5px;
     }
 
-    h3, h4 {
+    h3 {
       letter-spacing: 3px;
     }
 
-    h5, h6 {
-      letter-spacing: 2px;
+    h4 {
+      letter-spacing: 1.5px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    h2, h3, h4 {
+      text-transform: uppercase;
+    }
+
+    nav, h1, h2, h3, h4, span {
+      color: #000066;
+    }
+
+    blockquote {
+      font-style: italic;
+      font-size: 20px;
+    }
+
+    span {
+      font-style: normal;
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    .double-jimmy figcaption {
+      font-style: italic;
+      padding: 20px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .double-jimmy img {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .movie-intro, .fantasy {
+      width: 85%;
+      padding: 30px;
+      margin: 20px auto;
+      line-height: 1.5;
+      font-size: 18px;
+    }
+
+    .press, .soundtrack, .double-jimmy {
+      width: 85%;
+      margin: 20px auto;
+      padding: 30px;
+      background-color: #e5e5ff;
+    }
+
+    .press img {
+      height: 300px;
+      float: left;
+      margin-right: 40px;
+    }
+
+    .fantasy li {
+      padding: 5px;
+    }
+
+    .soundtrack img {
+      height: 450px;
+      float: right;
     }
 
     </style>
@@ -57,7 +132,14 @@
 
     </header>
 
-    <div>
+    <figure class="double-jimmy">
+      <img src="images/srts-jimmy.png" alt="Jimmy Page in The Song Remains the Same">
+      <figcaption>
+      A still of Jimmy Page in The Song Remains the Same.
+    </figcaption>
+    </figure>
+
+    <div class="movie-intro">
       <p>
         The Song Remains the Same is a <time datetime ="1976">1976</time> concert film featuring Led Zeppelin.
         The filming took place during the summer of <time datetime="1973">1973</time>, during three nights of concerts at <a href="https://www.msg.com/madison-square-garden">Madison Square Garden</a> in New York City.
@@ -69,34 +151,28 @@
       </p>
 
       <p>
-
-      </p>
-
-      <p>
         A reissue of the film, including previously unreleased footage as a bonus, was released on DVD, HD DVD, and Blu-ray Disc on <time datetime="2007-11-20"">November 20, 2007</time>, by Warner Home Video.
       </p>
 
     </div>
 
-    <div>
-      <img src="images/srts-jimmy.png" alt="Jimmy Page in The Song Remains the Same">
-    </div>
 
-    <div>
+
+    <div class="press">
+
+      <img src="images/srts-poster.jpg" alt="The Song Remains the Same movie poster">
 
       <h3><time datetime="1976">1976</time>   Press Release Excerpt</h3>
-      <img src="images/srts-poster.jpg" alt="The Song Remains the Same movie poster">
 
       <p>
         Led Zeppelin comes to the cinema in <strong>The Song Remains the Same</strong>.
         A motion picture record of the group's explosive <time datetime="1973">1973</time> Madison Square Garden performances, <strong>The Song Remains the Same</strong> captures the being and essence of the four people who make Led Zeppelin the most exciting and durable of rock groups.
-        Directed by Peter Clifton and Joe Massot, produced by Swan Song, Inc., with Peter Grant executive producer, the Warner Brothers movie has taken painstakingly precise years of work to reach the cinema.
         Jimmy Page has been at work on the soundtrack for three years, refining and honing, matching film and sound to production.
       </p>
 
       <blockquote>
         <p>
-          <span><strong>THE SONG REMAINS THE SAME</strong></span> reveals the members of Led Zeppelin as they really are and, for the first time, the world has a front row seat on Led Zeppelin.
+          <span>The Song Remains the Same</span> reveals the members of Led Zeppelin as they really are and, for the first time, the world has a front row seat on Led Zeppelin.
         </p>
       </blockquote>
 
@@ -104,6 +180,10 @@
         Incorporating live concert footage, fantasy sequences, backstage glimpses of the band, and a personal view of them at ease at home, <strong>The Song Remains the Same</strong> is a rare and human look at four rock musicians: Jimmy Page, Robert Plant, John Paul Jones, and John "Bonzo" Bonham.
         The film was their idea, their project totally, and it is their special way of giving their millions of friends what they have been clamoring for &mdash; a personal and private tour of Led Zeppelin.
       </p>
+
+    </div>
+
+    <div class="fantasy">
 
       <h3>The Fantasy Sequences</h3>
       <p>
@@ -150,8 +230,11 @@
 
       </li>
       </ul>
+    </div>
 
+    <div class="soundtrack">
 
+      <img src="images/srts-album.jpg" alt="The Song Remains the Same album cover">
 
       <h3>The Original <time datetime="1976">1976</time> Soundtrack</h3>
 
